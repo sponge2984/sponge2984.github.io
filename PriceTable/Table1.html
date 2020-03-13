@@ -1,17 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="TableStyle.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- 新 Bootstrap4 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- bootstrap.bundle.min.js 用于弹窗、提示、下拉菜单，包含了 popper.min.js -->
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+
+    <!-- 最新的 Bootstrap4 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="TableStyle.css" type="text/css" rel="stylesheet" />
     <title>Document</title>
 </head>
+
 <body>
-    <div class="header">Price Table<div>
-    <div class="flex">
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
+    <div class="container-fluid">
+        <h1 style="text-align: center;">Price Table</h1>
+        <!---<div class="row flex">
+            <div class="item col-sm-6 col-md-2">1</div>
+            <div class="item col-sm-6 col-md-2">2</div>
+            <div class="item col-sm-6 col-md-2">3</div>
+            <div class="item col-sm-6 col-md-2">4</div>
+        </div>--->
+        <div class="table-responsive">
+            <table class=" Mytable">
+                <thead>
+                    <tr>
+                        <th>Basic</th>
+                        <th>Medium</th>
+                        <th>Excellent</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <p class="Mybutton2 btn_orange">John</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">Doe</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">john@example.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="Mybutton2 btn_orange">Mary</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">James</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">mary@example.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="Mybutton2 btn_orange">July</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">Dooley</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">july@example.com</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p class="Mybutton2 btn_orange">Josh</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">Andy</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton2 btn_orange">Apple@example.com</p>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <p class="Mybutton btn_green">Buy</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton btn_green">Buy</p>
+                        </td>
+                        <td>
+                            <p class="Mybutton btn_green">Buy</p>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </body>
+
 </html>
