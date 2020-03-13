@@ -1,29 +1,5 @@
-.flex {
-    display: flex;
-    height: auto;
-    padding: 20px 15px;
-    background-color: #61a0f8;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.item {
-    /*flex: 0 0 20%;*/
-    background-color: #f08bc3;
-    /*margin: 2px;*/
-    padding: 10px;
-    display: flex;
-    height: 450px;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 2rem;
-    border: 1px solid #000;
-}
-
 .Mytable {
-    margin: 20px auto;
+    margin: 10px auto;
     padding: 10px;
     text-align: center;
     border: 2px solid #000;
@@ -32,8 +8,8 @@
 }
 
 .Mytable th {
-    width: 25%;
-    padding: 25px 10px;
+    width: 23%;
+    padding: 15px 10px;
     background: rgb(253, 184, 45);
     background: linear-gradient(0deg, rgba(253, 184, 45, 1) 0%, rgba(195, 47, 34, 1) 100%);
     border: 2px solid rgb(94, 35, 1);
@@ -55,13 +31,13 @@
 }
 
 .Mytable td {
-    width: 25%;
+    width: 23%;
     padding: 20px 10px;
     border-right: 2px solid rgb(94, 35, 1);
 }
 
 .Mybutton {
-    min-width: 120px;
+    min-width: 80px;
     border-radius: 10px;
     border: none;
     padding: 10px;
@@ -83,7 +59,7 @@
 }
 
 .Mybutton2 {
-    min-width: 120px;
+    min-width: 80px;
     border-radius: 10px;
     border: none;
     padding: 10px;
