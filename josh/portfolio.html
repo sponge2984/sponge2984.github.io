@@ -19,78 +19,89 @@
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript" src="portfolio.js"></script>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
 
 <body>
-    <div class="homepage" style="text-align: center;">
-        <h2 class="animated bounce" style="color: aliceblue;padding-top: 30px;">hello world</h2>
-    </div>
     <!-- menu -->
-    <nav class="navbar navbar-expand-sm bg-light navbar-light mynavbar">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-sm mynavbar navbar-custom ">
+        <a class="navbar-brand" href="#">
+            <img src="img/volleyball_white.png" alt="Logo" style="width:40px;">
+        </a>
+        <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon "></span>
         </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Active</a>
+        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <ul class="navbar-nav pull-right">
+                <li class="nav-item active ">
+                    <a class="nav-link " href="# ">Active</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Skill</a>
+                <li class="nav-item ">
+                    <a class="nav-link " onclick="scrollto( '#Skill') ">Skill</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Work Experience</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">Work Experience</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Education</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Education</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Link 1</a>
+                        <a class="dropdown-item" href="#">Link 2</a>
+                        <a class="dropdown-item" href="#">Link 3</a>
+                    </div>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Porfolio</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">Porfolio</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                <li class="nav-item ">
+                    <a class="nav-link " href="# ">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
+                <li class="nav-item ">
+                    <a class="nav-link disabled " href="# ">Disabled</a>
                 </li>
             </ul>
         </div>
     </nav>
 
+    <div class="homepage " style="text-align: center; ">
+        <h2 class="animated bounce " style="color: aliceblue;padding-top: 30px; ">hello world</h2>
+        <h1 style="display:none;color: aliceblue;margin-top: 654px; ">tessst</h1>
+    </div>
+
+
     <!-- Banner -->
-    <div id="Banner">
-        <h1 class="main-header">Banner</h1>
+    <div id="Banner ">
+        <h1 class="main-header ">Banner</h1>
     </div>
     <hr>
     <!-- Skill -->
+    <h1>Skills</h1>
     <div id="Skill">
-        <h1>Skills</h1>
-        <div class="card_container">
-            <div class="card_common card1">
-                <div class="card-info">
+        <div class="card_container ">
+            <div class="card_common card1 ">
+                <div class="card-info ">
                     <h2>Skill1</h2>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="card_common card2">
-                <div class="card-info">
+            <div class="card_common card2 ">
+                <div class="card-info ">
                     <h2>Skill2</h2>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
 
-            <div class="card_common card3">
-                <div class="card-info">
+            <div class="card_common card3 ">
+                <div class="card-info ">
                     <h3>Skill3</h3>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
-            <div class="card_common card4">
-                <div class="card-info">
+            <div class="card_common card4 ">
+                <div class="card-info ">
                     <h3>Skill4</h3>
-                    <p slot="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
         </div>
@@ -102,73 +113,73 @@
     </div>
     <hr>
     <!-- Education -->
-    <div id="Education">
+    <div id="Education ">
         <h1>Education</h1>
     </div>
     <hr>
     <!-- Porfolio -->
-    <!--<div id="Porfolio">
-        <div class="A_Slider">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="000001.jpg" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+    <!--<div id="Porfolio ">
+        <div class="A_Slider ">
+            <div class="card " style="width:400px ">
+                <img class="card-img-top " src="000001.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="000001.jpg" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+            <div class="card " style="width:400px ">
+                <img class="card-img-top " src="000001.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="000001.jpg" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+            <div class="card " style="width:400px ">
+                <img class="card-img-top " src="000001.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="000001.jpg" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+            <div class="card " style="width:400px ">
+                <img class="card-img-top " src="000001.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="000001.jpg" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+            <div class="card " style="width:400px ">
+                <img class="card-img-top " src="000001.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
                 </div>
             </div>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="000001.jpg" alt="Card image">
-                <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">See Profile</a>
+            <div class="card " style="width:400px ">
+                <img class="card-img-top " src="000001.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
                 </div>
             </div>-->
 
-    <!--<div class="box">your content1</div>
-    <div class="box">your content2</div>
-    <div class="box">your content3</div>
-    <div class="box">your content4</div>
-    <div class="box">your content5</div>
-    <div class="box">your content6</div>-->
+    <!--<div class="box ">your content1</div>
+    <div class="box ">your content2</div>
+    <div class="box ">your content3</div>
+    <div class="box ">your content4</div>
+    <div class="box ">your content5</div>
+    <div class="box ">your content6</div>-->
     </div>
     </div>
     <hr>
     <!-- Contact -->
-    <div id="Contact">
+    <div id="Contact ">
         <h1>Contact</h1>
         <p> awaken the dormant soul in us. We all come at place, where we feel dejected and disenfranchised with this materialistic world, once in our lives. At that time of undetermined condition and confusion, the poems will make our heart clear of all
             the debris and unwanted feelings and make our heart pure with the awakened soul. We have to make it clear that we want peace and love in this wonderful life over all other things of materialism. Here are those poems which come under this kind
@@ -176,7 +187,7 @@
             poem is. The choice of yours may be different. Ours is not the fianl list. You can prepare your own list of the TOP 100 poems.</p>
         </p>
     </div>
-    <div id="Contact">
+    <div id="Contact ">
         <h1>Contact</h1>
         <p> awaken the dormant soul in us. We all come at place, where we feel dejected and disenfranchised with this materialistic world, once in our lives. At that time of undetermined condition and confusion, the poems will make our heart clear of all
             the debris and unwanted feelings and make our heart pure with the awakened soul. We have to make it clear that we want peace and love in this wonderful life over all other things of materialism. Here are those poems which come under this kind
@@ -184,7 +195,7 @@
             poem is. The choice of yours may be different. Ours is not the fianl list. You can prepare your own list of the TOP 100 poems.</p>
         </p>
     </div>
-    <div id="Contact">
+    <div id="Contact ">
         <h1>Contact</h1>
         <p> awaken the dormant soul in us. We all come at place, where we feel dejected and disenfranchised with this materialistic world, once in our lives. At that time of undetermined condition and confusion, the poems will make our heart clear of all
             the debris and unwanted feelings and make our heart pure with the awakened soul. We have to make it clear that we want peace and love in this wonderful life over all other things of materialism. Here are those poems which come under this kind
@@ -192,9 +203,54 @@
             poem is. The choice of yours may be different. Ours is not the fianl list. You can prepare your own list of the TOP 100 poems.</p>
         </p>
     </div>
-
+    <footer class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
+                <small class="d-block mb-3 text-muted">© 2017-2018</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Features</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cool stuff</a></li>
+                    <li><a class="text-muted" href="#">Random feature</a></li>
+                    <li><a class="text-muted" href="#">Team feature</a></li>
+                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
+                    <li><a class="text-muted" href="#">Another one</a></li>
+                    <li><a class="text-muted" href="#">Last time</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Resource</a></li>
+                    <li><a class="text-muted" href="#">Resource name</a></li>
+                    <li><a class="text-muted" href="#">Another resource</a></li>
+                    <li><a class="text-muted" href="#">Final resource</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Resources</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Business</a></li>
+                    <li><a class="text-muted" href="#">Education</a></li>
+                    <li><a class="text-muted" href="#">Government</a></li>
+                    <li><a class="text-muted" href="#">Gaming</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>About</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Team</a></li>
+                    <li><a class="text-muted" href="#">Locations</a></li>
+                    <li><a class="text-muted" href="#">Privacy</a></li>
+                    <li><a class="text-muted" href="#">Terms</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
-<script type="text/javascript">
+<script type="text/javascript ">
     $(document).ready(function() {
         $('.A_Slider').slick({
             dots: true,

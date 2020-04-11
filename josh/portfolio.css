@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-color: #c1d3e9;
+  background-color: #FFF;
 }
 
 #Porfolio {
@@ -10,7 +10,7 @@ body {
 
 .homepage {
   width: 100%;
-  height: calc(100vh - 56px);
+  height: 100vh;
   background-image: url("./img/SleepingDogs.jpg");
   background-attachment: fixed;
   background-position: center;
@@ -18,24 +18,47 @@ body {
   background-size: cover;
 }
 
+.navbar-custom {
+  background-color: transparent;
+}
+
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("./img/menu.png");
+}
+
+.navbar-custom .navbar-text {
+  color: #FFF;
+}
+
+.navbar-custom .navbar-nav .nav-link {
+  color: #FFF;
+}
+
 .mynavbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
-  z-index: 999;
+  z-index: 1000;
+  position: fixed;
+  width: 100%;
+}
+
+.mynavbarscroll {
+  background-color: #ff5500;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* 卡片css內容*/
+#collapsibleNavbar {
+  text-align: right;
+}
+
+#collapsibleNavbar .mynavbarul {
+  float: right;
+}
+
+/* 卡片特效 */
 .card_container {
-  /*display: flex;
-flex-wrap: nowrap;
-grid-gap: 1rem;
-padding: 1rem;
-width: 100%;
-margin: 0 auto;
-justify-content: center;*/
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -48,10 +71,13 @@ justify-content: center;*/
   .card_container {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 20px;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 840px) {
   .card_container {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
@@ -78,7 +104,7 @@ justify-content: center;*/
 }
 
 .card_common::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -94,7 +120,7 @@ justify-content: center;*/
 }
 
 .card_common::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -182,6 +208,7 @@ justify-content: center;*/
   background-image: url("./img/views4.jpg");
 }
 
+/* 卡片內容 */
 .card-info {
   padding: 20px;
   position: absolute;
@@ -191,7 +218,7 @@ justify-content: center;*/
           transform: translateY(40%);
   -webkit-transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
   transition: 0.6s 1.6s cubic-bezier(0.215, 0.61, 0.355, 1);
-  z-index: 999;
+  z-index: 100;
 }
 
 .card-info p {
@@ -207,7 +234,7 @@ justify-content: center;*/
 }
 
 .card-info:after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -230,4 +257,4 @@ justify-content: center;*/
   font-weight: 700;
   text-shadow: rgba(0, 0, 0, 0.5) 0 10px 10px;
 }
-/*# sourceMappingURL=porfolio.css.map */
+/*# sourceMappingURL=portfolio.css.map */
