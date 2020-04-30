@@ -26,12 +26,14 @@ body {
   background-image: url("./img/menu.png");
 }
 
-.navbar-custom .navbar-text {
+.navbar-custom .navbar-text,
+.navbar-custom .navbar-nav .nav-link {
   color: #FFF;
 }
 
-.navbar-custom .navbar-nav .nav-link {
+.myName {
   color: #FFF;
+  margin: 10px;
 }
 
 .navbar-nav .nav-item a {
@@ -95,7 +97,7 @@ body {
         grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    padding: 20px;
+    /*padding: 20px;*/
   }
 }
 
@@ -107,7 +109,7 @@ body {
 }
 
 .card_common {
-  height: 550px;
+  height: 400px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
