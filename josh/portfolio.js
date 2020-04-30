@@ -17,5 +17,6 @@ function scrollto(elm) {
     $('html, body').animate({
         scrollTop: $(elm).offset().top - 120
     }, 500);
-    $('.navbar-toggler').click()
+    $('.navbar-toggler').click();
+
 }

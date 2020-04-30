@@ -35,6 +35,10 @@ body {
     color: #FFF;
 }
 
+.navbar-nav .nav-item a {
+    cursor: pointer;
+}
+
 .mynavbar {
     position: -webkit-sticky;
     position: sticky;
@@ -47,6 +51,7 @@ body {
 .mynavbarscroll {
     background-color: #ff5500;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+    transition: background-color 0.8s ease;
 }
 
 #collapsibleNavbar {
@@ -55,6 +60,21 @@ body {
 
 #collapsibleNavbar .mynavbarul {
     float: right;
+}
+
+.contentBox {
+    text-align: center;
+}
+
+.mySlider {
+    width: 95%;
+    margin: auto;
+}
+
+.mySlider .mySliderItem {
+    width: 400px;
+    margin: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
 }
 
 

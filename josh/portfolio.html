@@ -35,15 +35,15 @@
         <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
             <ul class="navbar-nav pull-right">
                 <li class="nav-item active ">
-                    <a class="nav-link " href="# ">Active</a>
+                    <a class="nav-link " onclick="scrollto('#About')">About</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " onclick="scrollto( '#Skill') ">Skill</a>
+                    <a class="nav-link " onclick="scrollto('#Skill')">Skill</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link " href="# ">Work Experience</a>
+                    <a class="nav-link " onclick="scrollto('#Protfolio')">Protfolio</a>
                 </li>
-                <li class="nav-item dropdown">
+                <!--<li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Education</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">Link 1</a>
@@ -53,9 +53,9 @@
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link " href="# ">Porfolio</a>
-                </li>
+                </li>-->
                 <li class="nav-item ">
-                    <a class="nav-link " href="# ">Contact</a>
+                    <a class="nav-link " onclick="scrollto('#Contact')">Contact</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link disabled " href="# ">Disabled</a>
@@ -71,13 +71,15 @@
 
 
     <!-- Banner -->
-    <div id="Banner ">
-        <h1 class="main-header ">Banner</h1>
+    <div id="About" class="contentBox">
+        <h1 class="main-header ">About</h1>
+        <h3>介紹我能提供的服務?what can i do for you?</h3>
     </div>
     <hr>
     <!-- Skill -->
-    <h1>Skills</h1>
-    <div id="Skill">
+    <div id="Skill" class="contentBox">
+        <h1>Skill</h1>
+        <h3>技能介紹</h3>
         <div class="card_container ">
             <div class="card_common card1 ">
                 <div class="card-info ">
@@ -107,19 +109,71 @@
         </div>
     </div>
     <hr>
-    <!-- work experience -->
-    <div id="Work">
-        <h1>Work Experience</h1>
+    <!-- Protfolio -->
+    <div id="Protfolio" class="contentBox">
+        <h1>Protfolio</h1>
+        <h3>作品傳案介紹</h3>
+        <div class="mySlider ">
+            <div class="mySliderItem ">
+                <img class="card-img-top " src="img/animal01.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
+                </div>
+            </div>
+            <div class="mySliderItem ">
+                <img class="card-img-top " src="img/animal02.jpg" alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
+                </div>
+            </div>
+            <div class="mySliderItem ">
+                <img class="card-img-top " src="img/animal03.jpg " alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
+                </div>
+            </div>
+            <div class="mySliderItem ">
+                <img class="card-img-top " src="img/animal04.jpg" alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
+                </div>
+            </div>
+            <div class="mySliderItem ">
+                <img class="card-img-top " src="img/animal01.jpg" alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
+                </div>
+            </div>
+            <div class="mySliderItem ">
+                <img class="card-img-top " src="img/animal02.jpg" alt="Card image ">
+                <div class="card-body ">
+                    <h4 class="card-title ">John Doe</h4>
+                    <p class="card-text ">Some example text.</p>
+                    <a href="# " class="btn btn-primary ">See Profile</a>
+                </div>
+            </div>
+        </div>
     </div>
     <hr>
-    <!-- Education -->
-    <div id="Education ">
-        <h1>Education</h1>
+    <!-- Contact -->
+    <div id="Contact " class="contentBox">
+        <h1>Contact</h1>
+        <h3>聯絡方式</h3>
     </div>
     <hr>
     <!-- Porfolio -->
     <!--<div id="Porfolio ">
-        <div class="A_Slider ">
+        <div class="mySlider ">
             <div class="card " style="width:400px ">
                 <img class="card-img-top " src="000001.jpg " alt="Card image ">
                 <div class="card-body ">
@@ -175,9 +229,7 @@
     <div class="box ">your content4</div>
     <div class="box ">your content5</div>
     <div class="box ">your content6</div>-->
-    </div>
-    </div>
-    <hr>
+
     <!-- Contact -->
     <div id="Contact ">
         <h1>Contact</h1>
@@ -252,10 +304,10 @@
 </body>
 <script type="text/javascript ">
     $(document).ready(function() {
-        $('.A_Slider').slick({
+        $('.mySlider').slick({
             dots: true,
             arrows: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 1,
             autoplay: true,
             autoplaySpeed: 2000,
