@@ -5,7 +5,7 @@ $(document).ready(function() {
 
 //控制首頁navbar
 function homenavbarcontrol() {
-    if (window.scrollY != 0) {
+    if (window.scrollY > 450) {
         $('.mynavbar').addClass('mynavbarscroll');
     } else {
         $('.mynavbar').removeClass('mynavbarscroll');
@@ -15,7 +15,7 @@ function homenavbarcontrol() {
 //滾動到element位置
 function scrollto(elm) {
     $('html, body').animate({
-        scrollTop: $(elm).offset().top - 120
+        scrollTop: $(elm).offset().top - 80
     }, 500);
     $('.navbar-toggler').click();
 
