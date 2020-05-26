@@ -17,8 +17,9 @@
     <link rel="stylesheet" type="text/css" href="plugin/animate.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
-
     <script type="text/javascript" src="slick/slick.min.js"></script>
+    <!-- Masonry library-->
+    <script type="text/javascript" src="plugin/masonry.pkgd.min.js"></script>
     <script type="text/javascript" src="portfolio.js"></script>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
@@ -28,7 +29,7 @@
     <nav class="navbar navbar-expand-sm mynavbar navbar-custom ">
         <a class="navbar-brand" href="#">
             <img src="img/volleyball_white.png" alt="Logo" class="volleyball" style="width:30px;">
-            <span class="myName">Josh Chang</span>
+            <span class="MenuName">Josh Chang</span>
         </a>
 
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -45,17 +46,6 @@
                 <li class="nav-item ">
                     <a class="nav-link " onclick="scrollto('#Protfolio')">Protfolio</a>
                 </li>
-                <!--<li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Education</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Link 1</a>
-                        <a class="dropdown-item" href="#">Link 2</a>
-                        <a class="dropdown-item" href="#">Link 3</a>
-                    </div>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="# ">Porfolio</a>
-                </li>-->
                 <li class="nav-item ">
                     <a class="nav-link " onclick="scrollto('#Contact')">Contact</a>
                 </li>
@@ -73,8 +63,6 @@
         <h1 style="display:none;color: aliceblue;margin-top: 654px; ">tessst</h1>
     </div>
 
-
-
     <!-- Banner -->
     <div id="About" class="contentBox">
         <h1 class="main-header ">About</h1>
@@ -88,59 +76,47 @@
             </div>
 
             <div class="mycontentRT">
-
-                <h1>Josh Chang</h1>
-
-                <h4>Front-end engineer</h4>
-                <div class="myIntroduce">RT Portfolio is a pixel perfect creative multi-purpose WordPress theme.It's clean and modern for any need: portfolio, business, agency, freelance, designer, web designer, developers, marketing, startup, blog, magazine, photography, architect,
-                    corporate, event, artist, music, restaurant.If you are searching for innovative WordPress Theme,RT Portfolio is top recommendation. Build beautiful, intelligent websites.</div>
+                <div class="myName">Josh Chang</div>
+                <div class="myJob">Front-end engineer</div>
+                <div class="myIntroduce">I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.</div>
             </div>
         </div>
     </div>
     <hr>
     <!-- Skill -->
     <div id="Skill" class="container contentBox">
-        <h1>Skill</h1>
-        <h3>技能介紹</h3>
-        <div class="card_container">
-
-            <div class="card_common card1 ">
-                <div class="card-info ">
-                    <h2>Skill1</h2>
-                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-            <div class="skill-info">
-                We're converting our compatibility data into a machine-readable JSON format. This compatibility table still uses the old format, because we haven't yet converted the data it contains. Find out how you can help!
-            </div>
+        <h1>What I can do.</h1>
+        <h1>Design what you want.</h1>
+        <h4>I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</h4>
+        <h1>Develop what you need.</h1>
+        <h4>I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</h4>
+    </div>
+    <hr>
+    <!-- Protfolio -->
+    <div id="Protfolio" class=" contentBox">
+        <h1>Project</h1>
+        <h3>作品傳案介紹</h3>
+        <div class="skill-info">
+            We're converting our compatibility data into a machine-readable JSON format. This compatibility table still uses the old format, because we haven't yet converted the data it contains. Find out how you can help!
         </div>
         <div class="card_container">
-            <div class="skill-info">
-                We're converting our compatibility data into a machine-readable JSON format. This compatibility table still uses the old format, because we haven't yet converted the data it contains. Find out how you can help!
+            <div class="card_common card1 ">
+                <div class="card-info ">
+                    <h3>Skill1</h3>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
             </div>
             <div class="card_common card2 ">
                 <div class="card-info ">
-                    <h2>Skill2</h2>
+                    <h3>Skill2</h3>
                     <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
-
-        </div>
-        <div class="card_container">
-
             <div class="card_common card3 ">
                 <div class="card-info ">
                     <h3>Skill3</h3>
                     <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-            </div>
-            <div class="skill-info">
-                We're converting our compatibility data into a machine-readable JSON format. This compatibility table still uses the old format, because we haven't yet converted the data it contains. Find out how you can help!
-            </div>
-        </div>
-        <div class="card_container">
-            <div class="skill-info">
-                We're converting our compatibility data into a machine-readable JSON format. This compatibility table still uses the old format, because we haven't yet converted the data it contains. Find out how you can help!
             </div>
             <div class="card_common card4 ">
                 <div class="card-info ">
@@ -148,15 +124,32 @@
                     <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
             </div>
-
+            <div class="card_common card4 ">
+                <div class="card-info ">
+                    <h3>Skill4</h3>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card_common card1 ">
+                <div class="card-info ">
+                    <h3>Skill1</h3>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card_common card2 ">
+                <div class="card-info ">
+                    <h3>Skill2</h3>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card_common card3 ">
+                <div class="card-info ">
+                    <h3>Skill3</h3>
+                    <p slot="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <hr>
-    <!-- Protfolio -->
-    <div id="Protfolio" class="container contentBox">
-        <h1>Protfolio</h1>
-        <h3>作品傳案介紹</h3>
-        <div class="mySlider ">
+        <!--<div class="mySlider ">
             <div class="mySliderItem ">
                 <img class="card-img-top " src="img/animal01.jpg " alt="Card image ">
                 <div class="card-body ">
@@ -205,11 +198,11 @@
                     <a href="# " class="btn btn-primary ">See Profile</a>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
     <hr>
     <!-- Contact -->
-    <div id="Contact " class="container contentBox">
+    <div id="Contact" class="container contentBox">
         <h1>Contact</h1>
         <h3>聯絡方式</h3>
     </div>
@@ -282,7 +275,7 @@
             poem is. The choice of yours may be different. Ours is not the fianl list. You can prepare your own list of the TOP 100 poems.</p>
         </p>
     </div>
-    <div id="Contact ">
+    <div id="Contact1 ">
         <h1>Contact</h1>
         <p> awaken the dormant soul in us. We all come at place, where we feel dejected and disenfranchised with this materialistic world, once in our lives. At that time of undetermined condition and confusion, the poems will make our heart clear of all
             the debris and unwanted feelings and make our heart pure with the awakened soul. We have to make it clear that we want peace and love in this wonderful life over all other things of materialism. Here are those poems which come under this kind
@@ -290,7 +283,7 @@
             poem is. The choice of yours may be different. Ours is not the fianl list. You can prepare your own list of the TOP 100 poems.</p>
         </p>
     </div>
-    <div id="Contact ">
+    <div id="Contact2 ">
         <h1>Contact</h1>
         <p> awaken the dormant soul in us. We all come at place, where we feel dejected and disenfranchised with this materialistic world, once in our lives. At that time of undetermined condition and confusion, the poems will make our heart clear of all
             the debris and unwanted feelings and make our heart pure with the awakened soul. We have to make it clear that we want peace and love in this wonderful life over all other things of materialism. Here are those poems which come under this kind

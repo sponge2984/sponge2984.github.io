@@ -1,6 +1,8 @@
 $(document).ready(function() {
     console.log("ready!");
     window.onscroll = function() { homenavbarcontrol() };
+
+    $(".card_container").masonry();
 })
 
 //控制首頁navbar
