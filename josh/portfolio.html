@@ -14,12 +14,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="plugin/animate.css" />
+    <link rel="stylesheet" type="text/css" href="plugin/css/animate.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <!-- Masonry library-->
-    <script type="text/javascript" src="plugin/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="plugin/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="plugin/js/wow.min.js"></script>
     <script type="text/javascript" src="portfolio.js"></script>
     <link rel="stylesheet" type="text/css" href="portfolio.css">
 </head>
@@ -27,7 +28,7 @@
 <body>
     <!-- menu -->
     <nav class="navbar navbar-expand-sm mynavbar navbar-custom ">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" onclick="scrollto('#homepage')">
             <img src="img/volleyball_white.png" alt="Logo" class="volleyball" style="width:30px;">
             <span class="MenuName">Josh Chang</span>
         </a>
@@ -49,18 +50,14 @@
                 <li class="nav-item ">
                     <a class="nav-link " onclick="scrollto('#Contact')">Contact</a>
                 </li>
-                <li class="nav-item ">
-                    <a class="nav-link disabled " href="# ">Disabled</a>
-                </li>
             </ul>
         </div>
 
     </nav>
 
-    <div class="homepage " style="text-align: center; ">
-        <h2 class="animated bounce " style="color: aliceblue;padding-top: 30px; ">hello world</h2>
-        <img src="img/Bullying-rafiki.svg" alt="Logo" style="width:400px;">
-        <h1 style="display:none;color: aliceblue;margin-top: 654px; ">tessst</h1>
+   <div id="homepage" class="homepage" >
+    <!--  <h2 class="animated bounce " style="color: aliceblue;padding-top: 30px; ">hello world</h2>
+-->
     </div>
 
     <!-- Banner -->
@@ -69,22 +66,23 @@
         <h3>介紹我能提供的服務?what can i do for you?</h3>
         <div class="mycontent">
             <div class="mycontentLF">
-                <div class="logoGroup"><img src="./img/facebook-logo.png" /><img style="width: 36px;" src="./img/facebook-logo.png" /><img style="width: 36px;" src="./img/facebook-logo.png" /><img style="width: 36px;" src="./img/facebook-logo.png" /></div>
+                <div class="wow fadeInLeft logoGroup"><img src="./img/facebook-logo.png" /><img style="width: 36px;" src="./img/facebook-logo.png" /><img style="width: 36px;" src="./img/facebook-logo.png" /><img style="width: 36px;" src="./img/facebook-logo.png" /></div>
                 <div class="mypic"></div>
                 <p class="aboutMeTitle">ABOUT ME</p>
+            </div>
+
+            <div class=" mycontentRT">
+                <div class="wow fadeInRight myName">Josh Chang</div>
+                <div class="wow fadeInRight myJob">Front-end engineer</div>
+                <div class="wow fadeInRight myIntroduce">I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.</div>
 
             </div>
 
-            <div class="mycontentRT">
-                <div class="myName">Josh Chang</div>
-                <div class="myJob">Front-end engineer</div>
-                <div class="myIntroduce">I'm a web designer / developer based in Toronto, Canada. I have a passion for web design and love to create for web and mobile devices.</div>
-            </div>
         </div>
     </div>
     <hr>
     <!-- Skill -->
-    <div id="Skill" class="container contentBox">
+    <div id="Skill" class="container contentBox ">
         <h1>What I can do.</h1>
         <h1>Design what you want.</h1>
         <h4>I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</h4>
@@ -93,13 +91,13 @@
     </div>
     <hr>
     <!-- Protfolio -->
-    <div id="Protfolio" class=" contentBox">
+    <div id="Protfolio" class=" contentBox ">
         <h1>Project</h1>
         <h3>作品傳案介紹</h3>
-        <div class="skill-info">
+        <div class="skill-info ">
             We're converting our compatibility data into a machine-readable JSON format. This compatibility table still uses the old format, because we haven't yet converted the data it contains. Find out how you can help!
         </div>
-        <div class="card_container">
+        <div class="card_container ">
             <div class="card_common card1 ">
                 <div class="card-info ">
                     <h3>Skill1</h3>
@@ -159,7 +157,7 @@
                 </div>
             </div>
             <div class="mySliderItem ">
-                <img class="card-img-top " src="img/animal02.jpg" alt="Card image ">
+                <img class="card-img-top " src="img/animal02.jpg " alt="Card image ">
                 <div class="card-body ">
                     <h4 class="card-title ">John Doe</h4>
                     <p class="card-text ">Some example text.</p>
@@ -175,7 +173,7 @@
                 </div>
             </div>
             <div class="mySliderItem ">
-                <img class="card-img-top " src="img/animal04.jpg" alt="Card image ">
+                <img class="card-img-top " src="img/animal04.jpg " alt="Card image ">
                 <div class="card-body ">
                     <h4 class="card-title ">John Doe</h4>
                     <p class="card-text ">Some example text.</p>
@@ -183,7 +181,7 @@
                 </div>
             </div>
             <div class="mySliderItem ">
-                <img class="card-img-top " src="img/animal01.jpg" alt="Card image ">
+                <img class="card-img-top " src="img/animal01.jpg " alt="Card image ">
                 <div class="card-body ">
                     <h4 class="card-title ">John Doe</h4>
                     <p class="card-text ">Some example text.</p>
@@ -191,7 +189,7 @@
                 </div>
             </div>
             <div class="mySliderItem ">
-                <img class="card-img-top " src="img/animal02.jpg" alt="Card image ">
+                <img class="card-img-top " src="img/animal02.jpg " alt="Card image ">
                 <div class="card-body ">
                     <h4 class="card-title ">John Doe</h4>
                     <p class="card-text ">Some example text.</p>
@@ -202,7 +200,7 @@
     </div>
     <hr>
     <!-- Contact -->
-    <div id="Contact" class="container contentBox">
+    <div id="Contact" class="container contentBox ">
         <h1>Contact</h1>
         <h3>聯絡方式</h3>
     </div>
@@ -267,7 +265,7 @@
     <div class="box ">your content6</div>-->
 
     <!-- Contact -->
-    <div id="Contact ">
+    <div id="Contact">
         <h1>Contact</h1>
         <p> awaken the dormant soul in us. We all come at place, where we feel dejected and disenfranchised with this materialistic world, once in our lives. At that time of undetermined condition and confusion, the poems will make our heart clear of all
             the debris and unwanted feelings and make our heart pure with the awakened soul. We have to make it clear that we want peace and love in this wonderful life over all other things of materialism. Here are those poems which come under this kind
@@ -291,48 +289,50 @@
             poem is. The choice of yours may be different. Ours is not the fianl list. You can prepare your own list of the TOP 100 poems.</p>
         </p>
     </div>
-    <footer class="container py-5">
-        <div class="row">
-            <div class="col-12 col-md">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="d-block mb-2"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg>
-                <small class="d-block mb-3 text-muted">© 2017-2018</small>
+    <footer class="container py-5 ">
+        <div class="row ">
+            <div class="col-12 col-md ">
+                <svg xmlns="http://www.w3.org/2000/svg " width="24 " height="24 " viewBox="0 0 24 24 " fill="none " stroke="currentColor " stroke-width="2 " stroke-linecap="round " stroke-linejoin="round " class="d-block mb-2 "><circle cx="12 " cy="12
+                        " r="10 "></circle><line x1="14.31 " y1="8 " x2="20.05 " y2="17.94 "></line><line x1="9.69 " y1="8 " x2="21.17 " y2="8 "></line><line x1="7.38 " y1="12 " x2="13.12 " y2="2.06 "></line><line x1="9.69 " y1="16 " x2="3.95 " y2="6.06
+                        "></line><line x1="14.31 " y1="16 " x2="2.83 " y2="16 "></line><line x1="16.62 " y1="12 " x2="10.88 " y2="21.94 "></line></svg>
+                <small class="d-block mb-3 text-muted ">© 2017-2018</small>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md ">
                 <h5>Features</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Cool stuff</a></li>
-                    <li><a class="text-muted" href="#">Random feature</a></li>
-                    <li><a class="text-muted" href="#">Team feature</a></li>
-                    <li><a class="text-muted" href="#">Stuff for developers</a></li>
-                    <li><a class="text-muted" href="#">Another one</a></li>
-                    <li><a class="text-muted" href="#">Last time</a></li>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="text-muted " href="# ">Cool stuff</a></li>
+                    <li><a class="text-muted " href="# ">Random feature</a></li>
+                    <li><a class="text-muted " href="# ">Team feature</a></li>
+                    <li><a class="text-muted " href="# ">Stuff for developers</a></li>
+                    <li><a class="text-muted " href="# ">Another one</a></li>
+                    <li><a class="text-muted " href="# ">Last time</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md ">
                 <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Resource</a></li>
-                    <li><a class="text-muted" href="#">Resource name</a></li>
-                    <li><a class="text-muted" href="#">Another resource</a></li>
-                    <li><a class="text-muted" href="#">Final resource</a></li>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="text-muted " href="# ">Resource</a></li>
+                    <li><a class="text-muted " href="# ">Resource name</a></li>
+                    <li><a class="text-muted " href="# ">Another resource</a></li>
+                    <li><a class="text-muted " href="# ">Final resource</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md ">
                 <h5>Resources</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Business</a></li>
-                    <li><a class="text-muted" href="#">Education</a></li>
-                    <li><a class="text-muted" href="#">Government</a></li>
-                    <li><a class="text-muted" href="#">Gaming</a></li>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="text-muted " href="# ">Business</a></li>
+                    <li><a class="text-muted " href="# ">Education</a></li>
+                    <li><a class="text-muted " href="# ">Government</a></li>
+                    <li><a class="text-muted " href="# ">Gaming</a></li>
                 </ul>
             </div>
-            <div class="col-6 col-md">
+            <div class="col-6 col-md ">
                 <h5>About</h5>
-                <ul class="list-unstyled text-small">
-                    <li><a class="text-muted" href="#">Team</a></li>
-                    <li><a class="text-muted" href="#">Locations</a></li>
-                    <li><a class="text-muted" href="#">Privacy</a></li>
-                    <li><a class="text-muted" href="#">Terms</a></li>
+                <ul class="list-unstyled text-small ">
+                    <li><a class="text-muted " href="# ">Team</a></li>
+                    <li><a class="text-muted " href="# ">Locations</a></li>
+                    <li><a class="text-muted " href="# ">Privacy</a></li>
+                    <li><a class="text-muted " href="# ">Terms</a></li>
                 </ul>
             </div>
         </div>
